@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <!-- Transition is played when the user hovers the element or activ, etc(depending on the selector which you are using) whereas animation plays automatically and the user does nothing to play it. -->
+
+    <!-- CSS Transitions
+    Purpose: Transitions are used to change property values smoothly over a specified duration.
+    Trigger: They require a trigger to start, such as a hover, focus, or click event.
+    States: Transitions have two states: a start state and an end state.
+    Complexity: They are simpler and best for basic animations.
+    Looping: Transitions do not loop by default.
+
+    CSS Animations
+    Purpose: Animations are used to create more complex sequences of changes.
+    Trigger: They do not require a trigger and can start automatically.
+    States: Animations can have multiple states defined by keyframes.
+    Complexity: They are more flexible and can handle complex animations.
+    Looping: Animations can loop indefinitely or for a specified number of times.
+
+    Transitions need a trigger and are simpler, ideal for basic effects.
+    Animations can run automatically, have multiple states, and are suitable for complex effects. -->
+    <style>
+        #box {
+            /* When you set display: flex; on a container, it turns that container into a flex container. This means that the children of this container become flex items, and you can use various flexbox properties to control their layout. */
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            justify-content: center;
+            /* centers the flex items horizontally. */
+            align-items: center;
+            /* centers the flex items vertically. */
+
+
+            /* transition-property: background-color;
+            transition-duration: 1s;  
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+
+            /* Transition short hand property in one line */
+            /* transition: background-color 1s ease-in-out 2s; */
+
+            /* If we want all the properties should go under transition, then we can write */
+            transition: all 5s ease-in-out 1s;
+        }
+
+        #box:hover {
+            /* which properties can be transit. */
+            /* CSS properties with continuous values  */
+            /* `width``height``margin` `padding` `opacity``transform``color``font-size``animation-duration``border-radius`  */
+            background-color: green;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-size: 45px;
+            transform: translateX(14%) translateY(20%);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS Transition Tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+
+</html>

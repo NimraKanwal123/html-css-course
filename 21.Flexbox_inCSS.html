@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox (Flexible Box Layout) </title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initalize the container as flexbox */
+            display:flex;
+
+            /* Flex properties for flex container  */
+            /* by default flex-direction is row */
+            /* flex-direction: row;  */
+            /* flex-direction: column;  */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+            /* layout become responsive */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* above two properties flex-dirextion and flex-wrap can be use togather by */
+            /* flex-flow: row-reverse wrap; */
+
+            /* to justify your content in horizontal dirextion */
+            /* to centre your content */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+           
+
+            /* to justify your content in verticle dirextion */
+            /* to vertically centre your content */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+        }
+        .item{
+            background-color: rgba(255, 99, 71, 0.662);
+            border: 2px solid rgba(255, 0, 0, 0.299);
+            margin: 2px;
+            padding: 3px;
+            width: 50px;
+            height: 50px;
+        }
+        /* flex properties for flex item */
+        #item1{
+            /* Higher the order later ut shows up in the container */
+            /* order: 33; */
+            /* higher the flex-grow number more it expand when they are allowed to expand on different screens */
+            /* flex-grow: 2; */
+        }
+        #item2{
+            /* order: 55; */
+            /* higher the flex-shrink number more it shrink when they are allowed to shrink on different screens */
+            /* flex-shrink: 3; */
+            /* when flex dirextion is set to row flex-basis will control the width */
+             /* when flex dirextion is set to column flex-basis will control the hight */
+            /* flex-basis: 320px; */
+        }
+        #item3{
+            /* order: 31; */
+            /* flex-grow: 3; */
+            /* flex short hand */
+            /* flex: flex-grow flex-shrink flex-basis */
+            /* flex: 2 2 40px; */
+
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+            /* align-self: center; */
+
+        }
+
+    </style>
+</head>
+<body>
+     <!--  CSS layout module designed to make it easier to design flexible and responsive layout structures without using float or positioning.  --> 
+      <h1>This is Flexible Box</h1>
+      <div class="container">
+          <div class="item" id="item1">First Box</div>
+          <div class="item" id="item2">Second Box</div>
+          <div class="item" id="item3">Third Box</div>
+          <div class="item" id="item4">Fourth Box</div>
+          <div class="item" id="item5">Fifth Box</div>
+          <div class="item" id="item6">Sixth Box</div>  
+          <!-- <div class="item" id="item1">First Box</div>
+          <div class="item" id="item2">Second Box</div>
+          <div class="item" id="item3">Third Box</div>
+          <div class="item" id="item4">Fourth Box</div>
+          <div class="item" id="item5">Fifth Box</div>
+          <div class="item" id="item6">Sixth Box</div>   -->
+      </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframs and animation</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            width:80vw;
+            height: 80vh;
+        }
+
+        .box {
+            background-color: blanchedalmond;
+            width:80px;
+            height: 80px;
+            position: relative;
+            /**
+            *TODO: after writing the name of animation you have to create it by using keyframe
+            *TODO: you can use animation in progress bar
+            *TODO: Short-hand
+            *TODO: animation: name duration timing-function delay iteration-count direction fill-mode; 
+            */
+            animation-name: nimra,nimra2;
+            /* Aik Animation 2s tak chalay gi*/
+            animation-duration: 2s;
+            /* no. of times animation will repaate you can set it infinite  */
+            animation-iteration-count: 2;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+
+            animation-fill-mode: forward;
+            /**
+            ** animation-fill-mode
+            ** forwards: The element retains the styles from the last keyframe of the animation after it ends.
+            ** backwards: The element applies the styles from the first keyframe of the animation during the animation delay period.
+            ** both: The element follows the rules for both forwards and backwards, retaining styles from the first keyframe during the delay and from the last keyframe after the animation ends. 
+            */
+
+            /* setting the speed of the animation at different points */
+            /* you can set this function by going to inspect and then click a small box their */
+            animation-timing-function: steps(4, end);
+            /**
+            **  linear: The animation has the same speed from start to end. 
+            **  ease: The default value. The animation starts slowly, speeds up, and then slows down again. 
+            **  ease-in: The animation starts slowly and then speeds up. 
+            **  ease-out: The animation starts quickly and then slows down. 
+            **  ease-in-out: The animation starts slowly, speeds up, and then slows down again. 
+            **  step-start: The animation jumps immediately to the end state at the start of the animation. 
+            **  step-end: The animation jumps immediately to the end state at the end of the animation. 
+            **  steps(int, start|end): The animation divides into a specified number of equal steps.like steps(4, end); 
+            **  cubic-bezier(n, n, n, n): Allows you to define your own timing function using a cubic Bézier curve 
+            */
+
+            /* animation-delay: 2ms; */
+
+            /* animation-direction:reverse; */
+            /* The animation-direction: alternate; property in CSS makes an animation play forward in the first cycle, then backward in the next cycle, and so on. This creates a back-and-forth effect. */
+            /* The animation-direction: alternate-reverse; property in CSS makes an animation play backward in the first cycle, then forward in the next cycle, and so on. This creates a back-and-forth effect, but starting in reverse. */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /** 
+            *? animation-play-state:paused;            
+            *? animation-play-state:running;            
+            *? animation-range: ;
+            *? animation-range-end: ;
+            *? animation-range-start: ;
+            *? animation-composition: ;
+            *? animation-timeline: ; 
+            */
+            
+
+            /* animation-name: nimra2; */
+            
+        }
+
+
+        @keyframes nimra2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 270px;
+                left: 0px;
+            }
+            75%{
+                top: 270px;
+                left: 270px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+          @keyframes nimra {
+            from {
+                /* left: 20px;
+                width: 200px; */
+                /* opacity in CSS refers to how transparent an element is. It controls the visibility of an element by setting how much you can see through it. The value ranges from 0 to 1: */
+                /* opacity:1;  */
+            }
+
+             to {
+                /* left: 30px;
+                width: 500px;
+                opacity: 0.5; */
+                transition:ease-in-out;
+                transform: translate(1000px);
+                background-color: white;
+             }
+        }  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box.
+        </div>
+    </div>
+</body>
+
+</html>

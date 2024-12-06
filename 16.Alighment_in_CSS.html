@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Ubuntu Mono", monospace;
+        }
+        /* class of div which contain all divs */
+        .container{
+            width: 700px;
+            border: 3px solid rgb(228, 136, 136);
+            margin: auto; 
+            background-color: rgb(213, 213, 124);
+            /* if you want to centre your text than use margin:auto; also there are other options of margin you can discover */
+            /* margin:45px 50px; */
+            
+        }
+        /* class of all individual divs */
+        .item{
+            border: 3px solid #c97ed1ba;
+            padding: 30px 14px;
+            margin: 24px 10px;
+            background: rgb(179, 225, 133);
+            
+        }
+        /* class of all individual para */
+        .para{
+
+        }
+        /* id of 1st div */
+        #fruit{
+             float: left;
+             width: 45%;
+        }
+        /* id of 2nd div */
+        #computer{
+            float: left;
+            width: 45%;
+        }
+        /* id of 3rd div */
+        #stationary{
+             clear:both;
+             /* it ensures that the element is positioned below any preceding elements that are floated to the left or right. This is particularly useful for preventing layout issues caused by floating elements. */
+             /* float: right;  */
+            width: 89%;
+        }
+        p,h3{
+            text-align: center;
+        }
+        h1{
+            margin: 23px auto;
+            width: 400px;
+        }
+        /* id of first para */
+        #fruitpara{
+
+        }
+        /* id of 2nd para */
+        #computerpara{
+             text-align:left;
+        }
+        /* id of 3rd para */
+        #stationarypara{
+             /* text-align: right; */
+             text-align: justify;
+             /* , the browser adjusts the spacing between words to ensure that each line (except the last one) stretches to fit the full width of the container. The last line of the paragraph is usually aligned to the left. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Float and Clear</h1>
+    <!-- Float: Moves an element to the left or right, allowing other elements to wrap around it.
+         Clear: Prevents elements from wrapping around a floated element, ensuring they appear below it.
+    -->
+         <div class="container">
+            <h1>Welcome to my store</h1>
+            <div id="fruit" class="item">
+                <h3>Fruits</h3>
+                <p id="fruitpara" class="para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta praesentium accusamus nemo nisi mollitia iste voluptatibus suscipit optio, quidem nihil quibusdam adipisci et dolorum, vitae ipsum molestiae ipsam eum provident repellat! Vitae odit, tempora dignissimos, saepe, ab quos accusantium placeat sed ratione consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae porro officiis nesciunt obcaecati minima alias sapiente, est quam suscipit, eos recusandae voluptates. Perferendis culpa reprehenderit maiores nisi sed exercitationem sint adipisci, nam aut natus recusandae dignissimos nulla quod fugiat.
+                </p>
+            </div>
+            <div id="computer" class="item">
+                <h3>Computer</h3>
+                <p id="computerpara" class="para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum magni provident beatae odio odit eaque laudantium voluptates aliquid facilis labore doloremque eveniet consequuntur ea itaque natus praesentium, dolorum quidem dolorem maiores obcaecati recusandae dolor reiciendis. Iusto quisquam nobis labore dignissimos reiciendis doloribus ab velit adipisci? Voluptas voluptatum eos excepturi. Ad mollitia rem unde quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia delectus perferendis facilis. Eligendi culpa magnam, incidunt at nemo pariatur quae accusantium, voluptas ratione facilis, labore aut. Sed totam assumenda officia nesciunt ullam repellendus, exercitationem, pariatur quam accusamus dignissimos magnam! Perspiciatis nulla ad quod veniam!
+                </p>
+            </div>
+            <div id="stationary" class="item">
+                <h3>Stationary</h3>
+                <p id="stationarypara" class="para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores doloremque a voluptas obcaecati, in hic, modi nemo facilis reiciendis veniam nulla, labore autem reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia placeat omnis consequatur obcaecati veritatis exercitationem esse ipsum, delectus possimus fugit cupiditate autem voluptas perferendis? Dolores aliquam sequi et ipsa minus enim quos tempora nam, officia esse commodi corporis laborum. Culpa aut repudiandae dolorem quos incidunt natus tempore assumenda perferendis quaerat!
+                </p>
+            </div>
+         </div>
+</body>
+</html>

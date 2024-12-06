@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Layout Using Grid Tamplete Area</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 5px;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer '
+            ;
+            /**
+            ** 'navbar navbar navbar navbar': This defines the first row of the grid, where all four columns are named navbar. This means the entire first row is dedicated to the navbar.
+            *? 'section section section aside': This defines the second row of the grid. The first three columns are named section, and the fourth column is named aside. This means the main content (section) will span three columns, and the sidebar (aside) will take up the fourth column.
+            ** 'footer footer footer footer': This defines the third row of the grid, where all four columns are named footer. This means the entire third row is dedicated to the footer. */
+        }
+        .item{
+            background-color: yellow;
+            border: 2px solid black;
+        }
+        #navbar{
+            /* it is the name of grid area */
+            grid-area: navbar;
+            height: 90px;
+        }
+        #section{
+            /* it is the name of grid area */
+            grid-area: section;
+            height: 800px;
+        }
+        #aside{
+            /* it is the name of grid area */
+            grid-area: aside;
+            height: 800px;
+        }
+        footer{
+             /* it is the name of grid area */
+            grid-area: footer;
+            height: 90px;
+        }
+        /**
+        **Agar myn ye chahati hon k .overlap element navbar per overlap karay to myn us ka grid area b  grid-area: navbar; set kr don gi.
+        */
+        .overlap{
+            grid-area: navbar;
+            width: 200px;
+            height: 80px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item" id="navbar">
+        Home About Contact
+       </div>
+       <div class="item" id="section">
+        veritatis sapiente. Est libero ab, sunt tempora eum velit amet quae in dicta. Eligendi dolor rem non quae minus minima maxime ducimus veniam fuga! Ducimus maiores sint nesciunt similique perspiciatis exercitationem, atque, laboriosam in sit temporibus dolores vero dolor aliquid nulla laudantium quibusdam officia ut veritatis fuga magni id, alias voluptates? Debitis tenetur labore, ad quae possimus tempore iure minus nulla odit maxime dolorem sit reiciendis id nam quidem culpa eos optio. Magni quidem aliquam accusantium esse velit! Enim nostrum eos dolores sed error ut iure pariatur accusantium animi eius, nisi voluptatem ex illum consectetur nam soluta ullam facilis ad aliquid ea distinctio totam? Corrupti ducimus odit hic debitis voluptate ut, libero nemo temporibus corporis vitae assumenda quaerat velit nisi iste maiores ipsum facere quae soluta nobis ipsam repellat molestiae cum consequuntur ad. Fugiat at veritatis minima soluta unde pariatur voluptatibus esse, earum, voluptatem odio excepturi ut modi facilis neque minus quaerat doloremque nihil suscipit enim amet possimus? Molestiae sequi doloribus magnam distinctio saepe temporibus quo ipsa ad et rerum minima, nesciunt asperiores. Libero repellat voluptates dolores incidunt possimus veniam labore natus vitae excepturi dolorem quidem quas quae illo, et repudiandae maxime ipsum autem sunt minus laboriosam voluptatem?
+       </div>
+       <div class="item" id="aside">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut explicabo sunt facere reprehenderit iste eius repellat temporibus ad, assumenda vero ab autem reiciendis, animi, mollitia sapiente quis praesentium unde! Quis, magnam reprehenderit mollitia commodi nesciunt qui voluptatem veritatis illum animi neque, delectus blanditiis assumenda officia tempore amet incidunt voluptatum!
+       </div>
+       <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, esse!</footer>
+       <div class="overlap"> </div>
+    </div>
+</body>
+</html>

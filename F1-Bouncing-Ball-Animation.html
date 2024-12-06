@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 90vh;
+            background-color: salmon;
+            position: relative;
+        }
+        .ball{
+            width: 80px;
+            height:80px;
+            border-radius: 50%;
+            background-color:chocolate;
+            position: absolute;
+            top: 76vh;
+            left: 1vw;
+            animation: ball1 3s cubic-bezier(0, 0, 0.41, 0.56) 1s infinite forwards;
+        }
+         @keyframes ball1 {
+            0%{
+                transform: translate(0, 0);
+            }
+            20%{
+                top: 76vh;
+                left: 1vh;
+                transform: translate(18vw,-74vh);
+                /* animation-timing-function: cubic-bezier(0, 0, 0.41, 0.56) ; */
+            }
+            25%{
+                top: 76vh;
+                transform: translate(22vw, -74vh);
+                animation-timing-function: linear; 
+            }
+            45%{
+                top: 1vh;
+                transform: translate(40vw, 74vh);
+                animation-timing-function: (0, 0, 0.59, 0.43);
+            }
+            50%{
+                top: 1vh;        
+                transform: translate(44vw, 74vh); 
+                animation-timing-function: linear; 
+            }
+            70%{
+                top: 76vh;
+                transform: translate(62vw,-76vh);
+                /* animation-timing-function: cubic-bezier(0, 0, 0.41, 0.56) ; */
+            }
+            75%{
+                top: 76vh;
+                transform: translate(66vw,-76vh);
+                animation-timing-function: linear; 
+            }
+            100%{
+                top: 1vh;
+                transform: translate(84vw, 74vh);
+                animation-timing-function: (0, 0, 0.59, 0.43);
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

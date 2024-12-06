@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid AutoFill And MinMax</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 5px;
+            /**
+            ** grid-template-columns: 1fr 1fr 1fr;
+            *? to centro your items
+            ** justify-content: center; */
+
+            /** 
+            *TODO: Autofill and MinMAx is used to create a responsive grid layout.
+            ** The auto-fit keyword means that the browser will create as many columns as possible, even if some of them are empty.
+            ** minmax(300px, 1fr): This function sets a minimum and maximum size for each column. In this case, each column will be at least 300 pixels wide but can grow to take up any remaining space (1 fraction of the available space).
+            *? grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+           ** minmax(300px, 500px): This function sets a minimum and maximum size for each column. In this case, each column will be at least 300 pixels wide but can grow up to 500 pixels wide.
+           */
+           
+           grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+        }
+        .box{
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+    </div>
+</body>
+</html>

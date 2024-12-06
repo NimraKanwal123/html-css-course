@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutti color navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --webcolor: orange;
+            --outline: rgba(225, 25, 165, 0.874);
+            --bc: gainsboro;
+            --font:rgb(71, 194, 55);
+            --centre:black;
+            --color: gray;
+        }
+        
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
+            font-style: oblique;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color:var(--font)
+        }
+        /* nav:hover{
+            transform: translateY(-100%);
+        } */
+        .nav1 {
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            margin: 13px 21px;
+            padding: 7px 2px;
+            margin-bottom: 0px;
+            /* border: 2px solid black; */
+            background-color: var(--bc);
+        }
+
+        .div1 svg {
+            width: 23px;
+            margin: -6px 8px;
+            padding: 3px 3px;
+        }
+
+        .div1 input {
+            width: 171px;
+            height: 24px;
+            margin: 18px -4px;
+            padding: 2px 2px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            color: var(--outline);
+            font-size: 15px;
+            font-variant: small-caps;
+            font-style: oblique;
+        }
+
+        .div2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px -7px;
+            padding: 2px 2px;
+        }
+
+        /**
+        *TODO: Span is inline element to set its margin padding make it inline-block
+        */
+
+        .div2 span {
+            display: inline-block;
+            margin: 2px 2px;
+            padding: 2px 2px;
+            font-weight: lighter;
+            color: var(--centre);
+            font-size: 30px;
+        }
+        
+        #w {
+            text-decoration: underline;
+            text-decoration-color: var(--webcolor);
+            text-decoration-thickness: 3px;
+            margin-bottom: 10px;
+        }
+
+        #emit {
+            display: inline-block;
+            margin: 20px 30px;
+            padding: 2px 2px;
+            color: var(--centre);
+        }
+
+        #name {
+            display: inline-block;
+            margin: 20px 20px;
+            padding: 2px 2px;
+        }
+
+        .div3 img {
+            display: inline-block;
+            width: 34px;
+            height: 32px;
+            border-radius: 17px;
+            margin: -10px -1px;
+            padding: 2px 2px;
+        }
+
+
+        .nav2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 13px 21px;
+            padding: 7px 2px;
+            margin-top: 2px;
+            height: 60px;
+            /* border: 2px solid red; */
+            background-color: var(--bc);
+        }
+
+        .nav2 ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* yahan ul nhi likhna */
+        .nav2 li {
+            list-style: none;
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        .nav2 a {
+            text-decoration: none;
+            color: var(--font);
+        }
+
+        a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            text-shadow: 2px 2px 2px var(--outline);
+            background-color: var(--color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav1">
+                <div class="div1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8" stroke="black" stroke-width="2" />
+                        <line x1="16" y1="16" x2="22" y2="22" stroke="black" stroke-width="2" />
+                    </svg>
+                    <input type="search" name="ser" id="ser" placeholder="search the site">
+                </div>
+                <div class="div2">
+                    <span>E</span>
+                    <span id="w">W</span>
+                    <span>E</span>
+                </div>
+                <div class="div3">
+                    <img src="https://th.bing.com/th/id/OIP.j0FVBDJ41RMAG_lUJ4zWFgHaEK?w=326&h=183&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="">
+                    ELIZABETH
+                    <span id="emit">&#x2630;</span>
+                </div>
+            </ul>
+        <nav>
+            <ul class="nav2">
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Sales</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

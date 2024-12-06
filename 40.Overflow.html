@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      /**
+      ** overflow: auto;
+      *? ye kehta hy k agar overflow ho to scroll bar dikha do agar nhi ho raha overflow to scroll bar dikhanay ki zaroorat nhi.
+      *TODO: auto dalna is a good idea.
+      ** overflow: scroll;
+      *? ye kehta hy k overflow ho ya na ho scroll bar dikah do. 
+      ** overflow: hidden;
+      *? ye kehta hy k box k real size myn jitna text ata hy wo dikha do baki hide kr do bus overflow nhi dikhna chahiay. 
+      ** overflow: clip;
+      *? ye overflow hidden jaysa ho hota hy bus difference ye hy k ab ap programatically (using javascript) b ocerflow to handle nhi kr saktay.
+      ** white-space: nowrap;
+      *? nowrap ka matlab hota hy k text ko neechay ko mat girao sara ka sara text horizontal hona chahiay.
+      ** overflow: hidden;
+      ** white-space: nowrap;
+      ** text-overflow: ellipsis; 
+      *? overflow ki koi b property (auto,scroll,hidden) or in dono ka use kr k overflow wala text nhi dikhta dots appear ho jaya hyn.
+      ** overflow-x: scroll;
+      ** overflow-y: hidden;
+      *? Ap overflow ko individually x or y myn b handle kr saktay hy.
+      *? shorthand overflow: overfolow-x overfolow-y;
+      */
+    }
+    /**
+    *TODO:  .container parant div hy with height 100 px or us ki daughter div .content ki height 200px hy is liay .content parent sy overflow ho ga to deal with it use overflow: auto; in parant
+     */
+    .content {
+      height: 200px;
+      background-color: lightblue;
+      /* overflow: scroll;
+      white-space: nowrap;
+      text-overflow: ellipsis; */
+    }
+  </style>
+  <title>Overflow Auto Example</title>
+</head>
+<body>
+  <div class="container">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, impedit!
+    <div class="content">This content is taller than the container, so scrollbars will appear.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design a card</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gainsboro;
+        }
+
+        .box1 {
+            width: 350px;
+            height: 500px;
+            background-color: white;
+            border-radius: 25px;
+            position: relative;
+            /* for other cards */
+            margin:2px 2px 20px 20px;
+            /* flex: 2 2 calc(20% - 10px); */
+            
+        }
+
+        img {
+            width: 330px;
+            height: 200px;
+            padding: 0px 10px;
+            margin: 11px 0px;
+            border-radius: 28px;
+        }
+
+        .btn {
+            border-radius: 20px;
+            background-color: white;
+            padding: 2px 10px;
+            color: rgba(178, 155, 155, 0.979);
+            border: 0.1px solid whitesmoke;
+        }
+
+        #bt1 {
+            margin-left: 21px;
+            margin-right: -11px;
+        }
+
+        #bt2 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 5px 21px;
+            color: rgba(0, 0, 0, 0.751);
+        }
+
+        .para {
+            /* margin: 2px 2px; */
+            font-family: 'Courier New', Courier, monospace;
+            padding: 3px 23px;
+            line-height: 23px;
+            font-size: 18px;
+            color:#9d8d8d;
+        }
+         .more {
+            position: absolute;
+            bottom: 0px;
+            left: 90px;
+            right: 90px;
+            margin: 11px 12px;
+            padding: 17px 14px;
+            border-radius: 30px;
+            border: none;
+            color: #2626dfad;
+            background-color: #9ed1e696;
+            font-weight: 600;
+            cursor: pointer;
+            }
+            .more:hover{
+                background-color: #9d8d8d;
+            }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <img src="https://cdn.pixabay.com/photo/2023/02/13/20/49/old-man-7788342_1280.jpg" alt="image">
+        <div>
+            <span class="btn" id="bt1">Nature</span>
+            <span class="btn" id="bt2">Lake</span>
+        </div>
+        <h1>Lago di Braies</h1>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea numquam porro, voluptas ab provident amet
+            ratione quia cum tempore!
+        </div>
+        <button class="more">Read More</button>
+    </div>
+
+    <!-- 2nd card copy of 1st -->
+    <div class="box1">
+        <img src="https://cdn.pixabay.com/photo/2023/02/13/20/49/old-man-7788342_1280.jpg" alt="image">
+        <div>
+            <span class="btn" id="bt1">Nature</span>
+            <span class="btn" id="bt2">Lake</span>
+        </div>
+        <h1>Lago di Braies</h1>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea numquam porro, voluptas ab provident amet
+            ratione quia cum tempore!
+        </div>
+        <button class="more">Read More</button>
+    </div>
+
+    <!-- 3rd card copy of 1st -->
+    <div class="box1">
+        <img src="https://cdn.pixabay.com/photo/2023/02/13/20/49/old-man-7788342_1280.jpg" alt="image">
+        <div>
+            <span class="btn" id="bt1">Nature</span>
+            <span class="btn" id="bt2">Lake</span>
+        </div>
+        <h1>Lago di Braies</h1>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea numquam porro, voluptas ab provident amet
+            ratione quia cum tempore!
+        </div>
+        <button class="more">Read More</button>
+    </div>
+
+    <!-- 4th card copy of 1st -->
+    <div class="box1">
+        <img src="https://cdn.pixabay.com/photo/2023/02/13/20/49/old-man-7788342_1280.jpg" alt="image">
+        <div>
+            <span class="btn" id="bt1">Nature</span>
+            <span class="btn" id="bt2">Lake</span>
+        </div>
+        <h1>Lago di Braies</h1>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea numquam porro, voluptas ab provident amet
+            ratione quia cum tempore!
+        </div>
+        <button class="more">Read More</button>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Spacifity and Cascdo algorithm</title>
+    <style>
+        /**
+    *TODO: Cascdo algorithm decides which property should will be winning if their are more than properties for same element.
+    *? The cascade algorithm has 4 distinct stages.    
+    ** Position and order of appearance: 
+    *? matlab agar same selector(like class selector or element selector) ho ga to jo bad myn kilha ho ga wo pehaly walay ko over write kr lay ga.
+    ** Specificity: 
+    *? agar different selectors hyn to kon sa selector preffer kiya jaey ga.Order of specificity is:
+    * Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector.
+    *TODO:   Specificity Calculation
+    *TODO:   To calculate specificity, assign a value to each part of the selector:
+    *TODO:   Universal Selector: 0
+    *TODO:   Element selectors and pseudo-elements: 1
+    *TODO:   Class selectors, attribute selectors, and pseudo-classes: 10
+    *TODO:   ID selectors: 100
+    *TODO:   Inline styles: 1000
+    **Origin: 
+    *? the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS.
+    *? jab ap inspect karayn to ap ko browser ki css daykhnay ko milay gi (user agent style sheet) k name sy laykin ap ny us k aggainst koi css property likhi hy to wo over write kr day gi user agent style sheet ko.
+    **Importance: 
+    *? Jab kisi property k sath !important likh diya jata hy to wo property inline ko be over write kr sakti hy yani ab hr soorat wo hi apply ho gi.
+    */
+        h1 {
+            color: aqua;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        .cyellow {
+            color: yellow;
+        }
+
+
+        /* attribute selector */
+        [data-x=a]{
+            background-color: aquamarine;
+        }
+
+        /* its specifity is 1 + 10 = 11 more than specificity */
+        h1.pink {
+            color: pink;
+        }
+
+        /**
+        **its specificity is 1+10+10+10(for attribute selector)+10=41
+        **a.harryclass.rohan-class[href]:hover {
+            **color: red;
+        **} 
+        */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="cyellow cred cpurple pink" data-x="a" >
+            CSS Spacifity
+        </h1>
+    </div>
+    <!-- *? Important Note -->
+    <!--TODO: Ap jab be apni css style sheet likhayn to ye ensure karayn k ap koi confusion create na karayn yani aik property apply karnay k liay koi element selector pr Id selectror phir Class selector kyun use karna aik hi cheeze use karo.  -->
+    <!-- Agar koi selector use kr rahay ho to ensure ho k is ko over write nhi karna paray ga -->
+    <!--** Inline or important selector ko avoid karo -->
+    <!-- Use class selector usually. -->
+</body>
+
+</html>

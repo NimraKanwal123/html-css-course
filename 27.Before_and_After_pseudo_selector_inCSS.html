@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- soucre.unsplash.com is website which gives you images raandomly in one url -->
+    <style>
+        /* we can insert elements through css dynamically */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* background-image: url(https://images.unsplash.com/photo-1635530071121-ac2a767e0fc5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNvdXJjZXxlbnwwfHwwfHx8MA%3D%3D);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; */
+        }
+         /* hum before or after pseudo selector ka use kr k image ki opacity kam kr saktay hyn or text clear dikhay ga */
+
+
+         /* header k under magar us k content sy pehlay ye insert ho ga */
+         header::before{
+            background-image: url(https://images.unsplash.com/photo-1638602612226-55fd638475c9?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+         /* header k under magar us k content k bad ye insert ho ga */
+        header::after{
+            content:"Sigam web development";
+            color: brown;
+        }
+        .navigation {
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        /* Section before and section after is used when you want to add the content before and after the section but in range of section */
+
+        /* section::before {
+            content: "this is before content"
+        } */
+
+        /* jis text ko b select karayn gy us ka color changr ho ga */
+        ::selection{
+            color: peru;
+        }
+        li::first-letter{
+            font-size: larger;
+            font-weight: bolder;
+        }
+        input::placeholder{
+            color: rgb(168, 29, 29);
+            font-size: larger;
+        }
+
+        section {
+            /* height: 344px; */
+            font-family: 'Bree Serif', serif;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::after{
+            content: "this is after content";
+        } */
+        h1 {
+            /* font-size: 2rem; */
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident error ratione doloribus sed dolorum,
+            ipsum cumque reprehenderit dignissimos architecto veniam optio sint aliquam consectetur corrupti vero
+            similique velit. Possimus eum consequatur delectus quia magni.</p>
+    </section>
+    <input type="text" placeholder="type here">
+</body>
+
+</html>

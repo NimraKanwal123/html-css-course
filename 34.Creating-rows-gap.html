@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> creating rows and gaps using grid</title>
+    <style>
+        .grid{
+            border: 2px solid pink;
+            height: 500px;
+        }
+        .box {
+            background-color: rgb(176, 76, 76);
+            border: 2px solid black;
+        }
+        .grid{
+        display: grid;
+        /**
+        ** explaining meaning of fr and grid-template-rows(to give height to your container)
+        ** 1fr: The first and second row will take up one fraction of the available space. 4fr: The third row will take up four fractions of the available space.(hrer available space means total space of container).
+        *? Also you can give names to each colomn in square bracket.Then use these names in other grid properties like grid-row grid-column property.
+        */
+        /* grid-template-rows: [pehla] 1fr [dosra] 1fr [third-row] 4fr;
+        grid-auto-rows: 2fr; */
+        /**
+        *? know grid-auto-rows:
+        *? Those are extra rows whose height you have not defined using grid-template-rows: you can define their height collectively using grid-auto-rows: property. 
+        */
+        /* grid-template-columns: 1fr 4fr 2fr; */
+        /**
+        **This creates 4 columns, each taking up 1 fractions of width of the available space and we will write 1fr usually
+        grid-template-columns: repeat(4,1fr);
+         */
+          /**
+        **This creates 5 rows, each taking up 1 fractions of height of the available space and we will write 1fr usually baki ki rows normal hi rahayn gi
+        grid-template-rows: repeat(5,1fr);
+        */
+
+        grid-gap: 1rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <!-- div.box{This is box-$}*10 short hand -->
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <!-- <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div> -->
+    </div>
+</body>
+
+</html>

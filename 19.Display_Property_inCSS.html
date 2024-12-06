@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Display property</title>
+    <style>
+        header {
+            border: 2px solid rebeccapurple;
+            /* Block elements pr jab myn margin:auto; lagati hon to ye center nhi hota is liay block elements k liay myn width laga kr margin:auto; ka use karon gi to wo centre ho jay ga */
+            margin: auto;
+            width: 100%;
+        }
+
+        img {
+            /* ye inline element hy ye margin:auto; karnay say centre nhi ho ga is k liay mujay isay block element banana paray ga by using display:block; */
+            margin: auto;
+            display: block;
+            width: 50px;
+            border-radius: 2pc;
+        }
+
+        h3 {
+            /* is ko centre karnay k liay use */
+            border: 2px solid red;
+            /* display: inline; */
+            text-align: center;
+            font-family: monospace;
+            font-size: 20px;
+            background-color: bisque;
+            margin: 1px;
+        }
+
+        /* After centring all above three elements you can change the width of header there will not be any problem oor even you can remove width and margin:auto; of header kyun k us k under k elements centre ho chukay hyn. know it will be responsive in all displaying screens.*/
+        /* understanding inline-block */
+        .box {
+            border: 2px solid bisque;
+            background-color: burlywood;
+            margin: 34px 10px;
+            padding: 20px 38px;
+            /* inline-block use karnay k liay b my ny */
+            
+            width: 30%;
+            box-sizing: border-box;
+            display: inline-block;
+            /*  By default, the width and height of an element only include the content, not the padding or border. This can make it tricky to manage the size of elements, especially when adding padding or borders.
+            When you use box-sizing: border-box;, the padding and border are included in the element’s total width and height. This makes it easier to size elements consistently. For example, if you set an element’s width to 200 pixels, that 200 pixels will include the content, padding, and border  */
+        }
+        .container{
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- display Block -->
+    <!--*TODO: The display: block property in CSS is used to define an element as a block-level element. Block-level elements start on a new line and take up the full width available, stretching out to the left and right as far as they can.  -->
+    <!-- display inline -->
+    <!--*TODO: The display: inline property in CSS makes an element behave like an inline element. This means the element will not start on a new line and will only take up as much width as necessary.  -->
+    <!-- display Inline-Block -->
+    <!--*TODO: The display: inline-block property in CSS allows an element to be formatted as an inline element, but it can also have width and height values like a block element. This means the element will sit inline with other elements, but you can control its dimensions and margins/paddings -->
+    <header class="top">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB4PN2WwQrWogueXj1Do1bw9-XJEOk8nQZEw&s" alt="">
+        <h3>Welcome Readers</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima quis delectus laboriosam
+                necessitatibus fugiat illum rerum tempora. Assumenda consequatur quas facere. Optio eligendi nesciunt
+                laboriosam, hic necessitatibus assumenda pariatur itaque quia quidem officiis laborum explicabo, qui
+                culpa magnam soluta totam delectus veniam fuga.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima quis delectus laboriosam
+                necessitatibus fugiat illum rerum tempora. Assumenda consequatur quas facere. Optio eligendi
+                nesciunt laboriosam, hic necessitatibus assumenda pariatur itaque quia quidem officiis laborum
+                explicabo, qui culpa magnam soluta totam delectus veniam fuga.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima quis delectus
+                laboriosam necessitatibus fugiat illum rerum tempora. Assumenda consequatur quas facere. Optio
+                eligendi nesciunt laboriosam, hic necessitatibus assumenda pariatur itaque quia quidem officiis
+                laborum explicabo, qui culpa magnam soluta totam delectus veniam fuga.</p>
+        </div>
+    </div>
+</body>
+
+</html>

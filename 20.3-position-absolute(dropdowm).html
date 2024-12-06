@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+    <style>
+        /**
+        **Uses od DropDown
+        *TODO:  1-Navigation: They help organize and simplify navigation on websites with many pages or sections. By grouping related links under a single menu, dropdowns keep the navigation bar clean and uncluttered.
+        *TODO:  2-Forms: Dropdowns are useful in forms to let users select from a list of predefined options, such as choosing a country, state, or category. This reduces the chance of errors and speeds up the form-filling process.
+        *TODO:  3-Filters and Sorting: On e-commerce sites or search results pages, dropdowns can be used to filter or sort items based on different criteria, like price, rating, or category. A dropdown menu can list product categories like “Electronics,” “Clothing,” and “Home & Garden.”
+        *TODO:  4-Settings and Preferences: Dropdowns are often used in user interfaces to allow users to select settings or preferences, such as language selection or display options.A dropdown can help users filter search results by criteria like “Most Recent,” “Highest Rated,” or “Price: Low to High.”
+        */
+        /* Style the dropdown button */
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+</body>
+
+</html>

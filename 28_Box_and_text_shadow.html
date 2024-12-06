@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: burlywood;
+            width: 500px;
+            height: 230px;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 5px 5px green; */
+            /* -ve number will give shadow upward */
+            /* box-shadow: -5px -5px green; */
+
+            /* here third number is called blur radius it will produce blur the shadow */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            box-shadow: 7px 5px 26px green;
+            /* box-shadow: -7px -5px 26px green; */
+
+            /* here 4th number represent spread radius */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* spread radius use karnay sy color charon taraf spread ho jata hy */
+            /* box-shadow: -7px -5px 20px 10px pink; */
+            /* box-shadow: -7px -5px 26px 10px rgba(71, 172, 172, 0.5); */
+
+            /* if i want to add box-shadow inside box*/
+            /* box-shadow: inset 9px 9px 20px 20px rgb(120, 179, 120); */
+
+            /* you can add 2 box-shadows or more than 2 box-shadows*/
+            /* box-shadow: 3px 5px 10px 10px pink, 9px 9px 20px 20px palegreen;  */
+        }
+
+        .card h2 {
+            /* text-shadow: h-offset v-offset blur color; */
+             text-shadow: 3px 4px red;
+             /* 3rd number is used to add blur effect */
+            /* text-shadow: 3px 2px 2px white; */
+            /* text-shadow: -3px -2px 2px white; */
+        }
+        /* Outline Just like border*/
+        /**
+        *? Differences between Outlines and Borders:
+        ** While both can visually appear similar, outlines differ from borders in a few ways:
+        ** Position: Outlines don't take up space; they're drawn around the element, outside of any  border.
+        ** Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+        ** Width: Borders can have varying widths on different sides, outlines have a uniform width.
+        ** Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot. */
+        p{
+            /* outline: width style color; */
+            /* border is inside and outline is outside */
+            outline: 2px solid black;
+            outline-offset: 5px;
+            text-shadow: 3px 2px 2px white; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- box shadow is used when background color and box color is same -->
+     <!-- Text shadow is used when due to background image text is no appearing clear -->
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>I have started C++ course which does not mean that we will stop this course. We will continue this course
+                to completion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium, doloremque
+                enim repellat impedit autem nostrum facilis odio omnis optio voluptates beatae mollitia temporibus
+                voluptas consequuntur harum animi totam molestiae labore architecto ratione qui!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat doloribus molestiae velit
+                ipsum, aliquam officia ratione excepturi in officiis, incidunt quo est pariatur tempore ex, distinctio
+                nostrum! Sint non doloribus rem obcaecati sunt.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Css Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur molestiae, placeat quas perferendis
+                quibusdam atque omnis distinctio obcaecati dolor, tempora unde deserunt iure nam. Iste labore eveniet
+                esse deserunt?</p>
+        </div>
+    </div>
+</body>
+
+</html>

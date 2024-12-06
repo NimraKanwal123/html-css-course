@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h2>Forms</h2>
+    <!-- Action aik end point hota hy jahan form ka sara data submit ho jata hy -->
+    <!-- Like here I have written that jo data meray user ny form my bhara hy wo sara data backend.php myn submit kr do -->
+    <form action="backend.php">
+        <div>
+            Name: <input type="text">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text">
+        </div>
+        <br>
+        <div>
+            <!-- Name wo name hy jis sy backend is tag ko pechanay ga -->
+            Email: <input type="email" disabled name="MyEmail">
+        </div>
+        <br>
+        <div>
+            Are you Qualified?: <input type="checkbox" name="mychechbox">
+        </div>
+        <br>
+        <div>
+            <!-- Checkbox is by default checked  -->
+            Checkbox is by default checked : <input type="checkbox" name="mycheckbox" checked>
+        </div>
+        <br>
+        <div>
+            <!--Displays a clickable button -->
+            Button: <input type="button" value="Click here">
+        </div>
+        <br>
+        <div>
+            Select color you want: <input type="color" name="mycolor">
+        </div>
+        <br>
+        <div>
+            Date:<input type="date" name="mydate" autofocus placeholder="Date">
+        </div>
+        <br>
+        <div>
+            Datetime:<input type="datetime" name="mydattime">
+
+        </div>
+        <br>
+        <div>
+            Datetime_local:<input type="datetime-local" name="mylocal">
+        </div>
+        <br>
+        <div>
+            Upload file: <input type="file" name="myfile">
+        </div>
+        <br>
+        <div>
+            <!-- In this type you can enter numbrers -->
+            Bonus: <input type="number" name="mybonus">
+        </div>
+        <br>
+        <div>
+            <input type="image" src="C:\Users\nimra\OneDrive\Desktop\dua.png" alt="">
+        <br>
+        <div>
+            Enter url:<input type="url" name="myurl">
+        </div>
+        <br>
+        <div>
+            <!-- here notice use of lable -->
+            <!-- Here for= means wo id jis ka lable hy ye means ye "name" id ka lable hy -->
+            <!-- id or for ka name same hy -->
+            <label for="name">Enter Password:</label><br>
+            <input type="password" name="" id="name">
+        </div>
+        <br>
+        <div>
+            <!-- Here name of all radio buttons are same so you can check one at a time -->
+            Gender:Male<input type="radio" checked name="mygender">
+            Female<input type="radio" name="mygender">
+            Other<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            <!-- Text area -->
+            Write about yourself: <br> <textarea name="mytext"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- Text area -->
+            Write about yourself: <br> <textarea name="mytextarea" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- if you want to give options to select like options of countries -->
+             <label for="mycountry">My Country:</label>
+             <!-- Know use Select which has options -->
+              <select name="country" id="mycountry">
+              <!-- it is by default selected -->
+              <option value="P" selected>Pakistan </option>
+              <option value="I">India</option>
+              <option value="C">China</option>
+              <option value="A">America</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+         <div>
+         </div>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling List</title>
+    <style>
+        nav ul li{
+            /**
+            **it will give your list a marker like numbering of any type
+            */
+            list-style:lower-greek;
+            /**
+            ** list-style-type can be an emogi also
+            ** Press Windows key + . (period) or Windows key + ; (semicolon). This will open the emoji picker.
+            */
+            list-style-type:"❤";
+            background-color: bisque;
+            /**
+            ** list style background-color sy bahir hy is ko color k under lanay k liay use 
+            */
+            list-style-position: inside;
+            /**
+            ** ye image marker ki jagha pr appear ho gi
+            *? list-style-image: url("https://picsum.photos/200/300");
+            ** shorthand
+            *? list-style: type position image; 
+            */
+        }
+        /* how to make list horizontal  */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            padding: 10px 10px;
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <!-- Important Note -->
+    <!--** Inspect myn ja kr element.style ki bracket myn ap jo kuch be type kartay hyn wo us element k inline style k tor pr add hota hy  -->
+</body>
+</html>

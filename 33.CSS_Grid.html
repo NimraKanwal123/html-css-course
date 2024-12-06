@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+
+            /**
+            *? my container has become grid
+            *? ab is k items grid items ban jayn gay or in items pr property lag jay gi 
+            */
+
+            /** 
+            ** grid-template-columns: [first] 200px [second] 100px [third] 100px;
+            *NUmbers are telling width of columns. 
+            *TODO: It means you are creating a grid with three columns,where:The first column is 200 pixels wide. The second column is 100 pixels wide. The third column is also 100 pixels wide.
+            *? Also you can give names to each colomn in square bracket.Then use these names in other grid properties like grid-row grid-column property. 
+            ** grid-template-columns: 200px auto 200px;
+            *TODO: a grid layout with three columns, where:The first column is 200 pixels wide.The second column takes up the remaining available space (auto).The third column is 200 pixels wide.
+            **grid-template-columns: 6fr 4fr 2fr;
+            *TODO: 6fr: The first column will take up six fractions of the available space.4fr: The second column will take up four fractions of the available space.2fr: The third column will take up two fractions of the available space.
+            **grid-template-columns: repeat(7, auto);
+            *TODO:is used to create a grid layout with seven columns, where auto means each column’s width is determined automatically based on the content within it.
+            */
+            grid-template-columns: 6fr 4fr 2fr;
+
+            /**
+            ** grid-gap:30px;
+            *  or
+            ** grid-gap:3rem;
+            *TODO:grid gap is used to produce gaps between grids you can use padding property while using it.But margin ko use na karna.
+            */
+            
+            /**
+            *? you can set grid-column-gap and grid-row -gap seperately
+            **grid-column-gap:90px;
+            **grid-row-gap: 20px;
+            */
+           
+
+        }
+
+        .item {
+            background-color: bisque;
+            margin: 2px; 
+            padding: 30px 3px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- div.item{This is Item_$}*9 short hand-->
+        <div class="item">This is Item_1</div>
+        <div class="item">This is Item_2</div>
+        <div class="item">This is Item_3</div>
+        <div class="item">This is Item_4</div>
+        <div class="item">This is Item_5</div>
+        <div class="item">This is Item_6</div>
+        <div class="item">This is Item_7</div>
+        <div class="item">This is Item_8</div>
+        <div class="item">This is Item_9</div>
+        <div class="item">This is Item_10</div>
+        <div class="item">This is Item_11</div>
+        <div class="item">This is Item_12</div>
+        <div class="item">This is Item_13</div>
+    </div>
+</body>
+
+</html>

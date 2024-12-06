@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <!-- CSS Position: static(is position by default),relative,absolute,fixed,sticky -->
+    <style>
+      .container{
+        border: 2px solid black;
+        width: 100%;
+        height: 2000px;
+        background-color: antiquewhite;
+      }
+      .box{
+        display: inline-block;
+        width: 103px;
+        height: 200px;
+        border: 2px solid rebeccapurple;
+      }
+      #box3{
+        /* box will move relative to its normal position */
+        /* position: relative;
+        top: 30px;
+        left: 40px; */
+        
+        /* box will move relative to its first parent which is div.container here */
+        /* if anyone use position:absolute and you want to change its position relative to your parent element make sure u use position:relative in parent element and in child parent:absolute unless it wont work as the child element will take its position relative to body not relative to its parent */
+        /* position: absolute;
+        top: 30px;
+        left: 40px; */
+
+        /* Position is realtive to browser window */
+        /* when i will scroll it will remain there */
+        /* Use Case: Commonly used for elements like headers or navigation bars that need to remain visible at a specific position on the screen. */
+        /* position: fixed;
+        right: 4px; 
+        bottom: 3px; */
+
+        /* it will remain in its position when you scroll */
+        /* Use Case: Useful for elements that should stick to the top of the viewport when scrolling, such as table headers or section headers. */
+        position: sticky;
+       top:3px;
+      }
+    </style>
+</head>
+<body>
+    <div style="position: sticky; top: 0;">This is a sticky element</div>
+    <div style="position: fixed; bottom: 0; right: 0;">This is a fixed element</div>
+
+   <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">Chat with us</div>
+    <div class="box" id="box4">4</div>
+   </div> 
+   
+
+</body>
+</html>
+
+
+
+

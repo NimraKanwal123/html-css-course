@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: rgba(196, 165, 126, 0.728);
+            border-radius: 13px;
+            margin: 29px 28 px;
+        }
+
+        /**
+        *TODO:NOTE
+          */
+         .navbar ul {
+             overflow: auto; 
+        } 
+
+        /**
+        *TODO:NOTE
+          */
+        .navbar li {
+            float: inline-start;
+            /* jesay hi myn float karon gi to background color dikhna band ho jay ga because jab kisi ko float kartay hyn to wo parent myn sy over flow ho jay ga then use 
+            .navbar ul{
+             overflow: auto;
+             }*/
+            list-style: none;
+            /*to remove the bullets*/
+            margin: 13px 15px;
+
+        }
+
+        .navbar li a {
+            padding: 5px 4px;
+            /*list k hr element ki padding hy */
+            text-decoration: none;
+            /* to remove lines under words */
+            color: rgb(9, 158, 113);
+        }
+
+        /**
+        *TODO:NOTE
+          */
+        .navbar li a:hover {
+            color: brown;
+        }
+
+        .search {
+            float: right;
+            color: black;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+
+        .navbar input {
+            border: 2px solid blue;
+            border-radius: 21px;
+            padding: 3px 20px;
+            width: 175px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="search" name="search" id="searchme" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

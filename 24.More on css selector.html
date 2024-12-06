@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: rgb(156, 211, 105);
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /**
+        *?all paragraph tags inside div even though it is not direct child of div 
+        */
+        /* div p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        } */
+        /**
+        *? but if i want to target all paragraph tags inside div which are only direct child of div then
+        */
+        /* div>p {
+            color: rgb(0, 0, 128);
+            background-color: pink;
+            font-weight: bold;
+        } */
+        /**
+        *? If div is previous sibling of p then css is applied on p 
+        *? if you close tags by down arrows on leat hand side you can see which paragraph tag has previous sibling div 
+        */
+        /* div+p {
+            color: white;
+            background-color: #D2302C;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>This is more on Css selectors.</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is a paragraph inside li and this is not a direct child of div.</p>
+                <li> it is a list inside ul -- div</li>
+                </li>
+            </ul>
+            <p> This is a paragraph</p>
+        </div>
+        <p> This is another paragraph</p>
+    </div>
+    <p> This is the third paragraph</p>
+</body>
+
+</html>

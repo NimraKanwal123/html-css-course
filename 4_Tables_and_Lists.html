@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables</title>
+    <style>
+             /* Add some basic styling for readability */
+             table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- List -->
+    <!-- List unorderd = ul -->
+    <!-- ul type attribute has vlues disk circle and square -->
+     <ul type="square">
+        <li>1st item of unordered list</li>
+        <li>2nd item of unordered list</li>
+        <li>3rd item of unordered list</li>
+        <li>4th item of unordered list</li>
+     </ul>
+    <ul type="disk">
+        <li>This list item has further unordered list items</li>
+        <!-- List inside list -->
+        <ul>
+            <li>List</li>
+            <li>Inside</li>
+            <li>List</li>
+        </ul>
+        <li>This is Second item of unorderd list</li>
+        <li>This is Third item of unorderd list</li>
+        <!-- Aysi list Jis ki agay sy items hon -->
+        <li>
+            <ul>
+                <li>apple</li>
+                <li>bannana</li>
+                <li>cat</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- List orderd = ol -->
+    <!-- Type is its attribute VS code is telling you all types of orderd list when you write type -->
+    <ol type="A">
+        <li>This is First item of orderd list</li>
+        <li>This is Second item of orderd list</li>
+        <li>This is Third item of orderd list</li>
+        <!-- List inside list -->
+        <ol>
+            <li>List</li>
+            <li>Inside</li>
+            <li>List</li>
+        </ol>
+    </ol>
+    <!-- defition list-->
+     <dl>
+        <dt>Html</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magni at minima?</dd>
+        <dt>Css</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quibusdam natus corporis?</dd>
+     </dl>
+    <!-- Tables -->
+    <h3>HTML Table</h3>
+    <table>
+        <!-- captin tag in table -->
+        <caption>Student details </caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>class</th>
+                <th>rollno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- colspan and rowspan tab use kiay jatay hyn jab myn chahti hon k koi word 2 col yan 2 row ki jagha lay ly -->
+                <td>Nimra</td>
+                <td>Bs Physics</td>
+                <td>1720</td>
+            </tr>
+            <tr>
+                <td>Kanwal</td>
+                <td>BsCs</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Alia</td>
+                <td>Bs Maths</td>
+                <td>2030</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Alsam</td>
+                <td>Bs chemistry</td>
+                <td>400</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-8745</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+</body>
+
+</html>

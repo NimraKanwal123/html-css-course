@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <!--** google sy liya gaya link yahan paste kiya hy -->
+    <!--*? <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--*? <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--*? <linkhref="https: 
+    <!-- //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" -->
+    <!--*? rel="stylesheet">   -->
+    <style>
+        /* oper walay link k neechay jo style thay font sy related wo paragraph myn paste kiay hyn */
+        P {
+            /* font-family: "Roboto", system-ui; */
+            /**
+                ** copy google font from import option and place link inside style tag
+                ** @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+                ** font-family: "Overpass", sans-serif; 
+                */
+            /* next properties */
+            font-size: 20px;
+
+            line-height: 1em;
+            /* do fonts k daymayan ki spacing line height hy.parany k font size ka kitna percentage*/
+
+            font-variant: small-caps;
+
+            /**
+            **This means that lowercase letters are converted to uppercase letters, but they are rendered in a smaller font size compared to the original uppercase letters. This can be useful for stylistic purposes, such as headings or subheadings, 
+
+            **font: italic small-caps bold 16px/1.5 Arial, sans-serif;
+
+            **font: A shorthand property for setting font-style, font-variant, font-weight, font-size, line-height, and font-family. 
+            */
+
+        }
+
+        span {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /**
+        *? Web save fonts wo hoti hyn jo hamaray web my pehlay sy install hon gi jab myn usay use karon  gi to kooi errror nhi aye ga 
+        ** jo fonts save nhi hotin unhayn web fonts kehtay hyn unhayn import karna parta hy 
+       *? iss k ilawa font stack ka concept hy yani myn aik sy zayada fonts likh lon gi k koi to webmyn save ho ga or wo kam kr jay ga
+        ** example of font stack
+        ** p
+        ** {
+        ** called fall-back fonts
+        ** font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        ** } 
+        *? CSS font stack wo website hy jo Web save fonts k baray myn batati hy 
+        *? Agar ap ny koi font select karna hy sapmle daykh kr or us ko import karna hy to google fonts best website hy.
+        */
+
+
+
+        /**
+         **do yan do sy zayada fonts ka link aik sath b impore kiya ja sakta hy
+         **aik sath 3 font import kiay hyn or inhayn 3no paragraph myn use kiya hy.
+         **when you select a font there is samll letter box get 1 than go back and select another font number of box increase to 2 aik last you can get imbeded code to impot and copy their family.*/
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@400;700&family=Shadows+Into+Light+Two&display=swap');
+
+        .p1 {
+            font-family: "Shadows Into Light Two", cursive;
+        }
+
+        .p2 {
+            font-family: "Play", sans-serif;
+        }
+
+        .p3 {
+            font-family: "Pacifico", cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Fonts</h3>
+    <p>Lets play with <span> fonts </span> it is very exciting.</p>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure.</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum sint id numquam!</p>
+    <p class="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio suscipit ipsum veritatis!</p>
+
+</body>
+
+</html>

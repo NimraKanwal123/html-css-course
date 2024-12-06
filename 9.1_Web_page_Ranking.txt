@@ -1,0 +1,25 @@
+Google un pages ko prefer kr k dikhata hy jo Fast hon information bohat achi present kartay hon or user ko
+acha experience dayn.
+
+Core Web Vitals
+Sub sy pehlay to content ata hy content bohat acha hona chahiay.
+
+CLS(Cumulative Layout Shift)
+Hmara CLS kam sy kam hona chahiay.
+yani page load hotay hotay kitan shift ho raha hy.Layout shift nhi hona chahiay. Agat images k sath hi width or hight laga datay hyn to layout shift nhi ho ga.
+
+LCP(Largest Contentful Paint)
+Agar user page view kr raha hy to us myn jo sab sy bara element hy wo kitni dayr myn load ho raha hy.Acha LCP score 2.5 seconds hona chahiay.
+
+FID(First Input Delay)
+Agar kisi user ny koi input diya jesay koi button click kiya to kitni dayr myn wo input processs hota hy and its limit is 100 milisecons.
+
+Is k ilawa b hyn core web vitals you can search for it or ye update b hotay rehtay hyn.
+
+By going to inspect you can select LightHouse it will give you report and tell you which improvements are required for your webpage.
+
+Tital ap k page k content ko reflect karna chahiay.
+mata description b ap k page k contect ki 2 line summary honi  chahiay.
+mata keyword itnay important nhi hyn.
+
+you can learn further from web.dev

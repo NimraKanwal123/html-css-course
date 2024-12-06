@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 1st_This is used for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .container{
+            font-size: 10px;
+            border: 2px solid red;
+            height: 100vh;
+            width: 100vw;
+            /* if wo use  height: 100vh; and width: 100vw; then our container will take height and width equal to screen height and width*/
+        }
+       h1{
+        text-align: center;
+       }
+        #heading1{
+        font-size: 5em;
+         /* here em set size multiple of parent size here parent is conteiner so 5x10px=50px  */
+         padding:3em;
+         /* but here padding is set by multiple of font-size written in same id(here is 50px)   */
+         /* here padding is 3x50=150px  */
+       }
+       #heading2{
+        font-size: 3rem;
+         /* it depends on the font size of html 3x20px=60px  */
+         padding: 3rem;
+         /* similarly 3x20px=60px */
+       } 
+    </style>
+</head>
+<body>
+    <!--*?   1st_For responsive design you will use display flex property.-->
+    <!--*?   2nd_For responsive design you can use max width and max height. -->
+     <!--*?  3rd_ you can use em, rem,vh,vw called size units   -->
+    <!-- *TODO:  Use em for elements that need to scale relative to their parent, such as nested components or elements within a specific section. -->
+    <!-- *TODO:  Use rem for global scaling, such as setting base font sizes, margins, and paddings that should be consistent throughout the entire document. -->
+    <div class="container">
+        <h1 id="heading1">This is first heading</h1>
+        <h1 id="heading2">This is second heading</h1>
+        <h1 id="heading3">This is third heading</h1>
+    </div>
+</body>
+</html>

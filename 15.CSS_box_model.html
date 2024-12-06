@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* it is universal selector */
+        * {
+            /** 
+            *?  box-sizing: border-box; is used to include padding and border in the element’s total width and height, it prevents unexpected changes in size when padding or borders are added. 
+
+            *?  By default, the width and height of an element are calculated like this:
+
+            *?  [ \text{width} + \text{padding} + \text{border} = \text{actual width} ] [ \text{height} + \text{padding} + \text{border} = \text{actual height} ]
+
+            *?  This means that if you set an element’s width to 300px, the actual width might be larger if you add padding and borders.
+
+            *?  When you use box-sizing: border-box, the padding and border are included in the width and height you set for the element. So, if you set an element’s width to 300px, the total width will be 300px, including the padding and border.
+            */
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* is tarhan sub elements ki margin or padding zero ho jay gi jab taak kk unhayn neechay over write nhi karayn gay*/
+        }
+
+        body {
+            background-color: rgb(187 189 80 / 50%);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            background-color: rgb(105, 228, 187);
+            border: 3px solid rgb(154, 95, 214);
+            /* METHOD 1 */
+            /* padding: 79px; */
+            /* margin: 23px; */
+            /*  METHOD 2 */
+            /* we can set margin/padding for top bottom right left 
+            padding-top: 2px;
+            padding-bottom: 3px;
+            padding-right: 5px;
+            padding-left: 7px;
+            margin-top: 2px;
+            margin-left: 3px;
+            margin-bottom: 3px;
+            margin-right: 20px; */
+            /* METHOD 3 short-hand */
+            /* padding/margin top right bottom left*/
+            padding: 23px 3px 43px 45px;
+            margin: 3px 4px 6px 7px;
+            /* METHOD 4 short-hand*/
+            /* padding/margin of top/bottom and left right same */
+            padding: 30px 50px;
+            margin: 20px 130px;
+
+            border-radius: 6cqi;
+            width: 500px;
+            /*but if i change padding or margin width will change automatically then do this*/
+            box-sizing: border-box;
+            /**
+            **Important note: if you want to select color padding margin that suits best to your websites just go to your webpage and select inspect then in style tag you can change numbers by using ctrl+up or down key.
+            */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dignissimos accusantium repellendus
+            consequuntur quam magni eaque sed ipsum earum quo minus fugit sunt reprehenderit temporibus iusto neque in
+            hic, perspiciatis a ea labore dolore! Voluptatibus odio eos voluptatem placeat sunt.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dignissimos accusantium repellendus
+            consequuntur quam magni eaque sed ipsum earum quo minus fugit sunt reprehenderit temporibus iusto neque in
+            hic, perspiciatis a ea labore dolore! Voluptatibus odio eos voluptatem placeat sunt.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dignissimos accusantium repellendus
+            consequuntur quam magni eaque sed ipsum earum quo minus fugit sunt reprehenderit temporibus iusto neque in
+            hic, perspiciatis a ea labore dolore! Voluptatibus odio eos voluptatem placeat sunt.</p>
+    </div>
+
+
+</body>
+
+</html>

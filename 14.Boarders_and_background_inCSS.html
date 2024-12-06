@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boarders and background</title>
+  <style>
+    #firstpara {
+      background-color: rgb(58, 216, 92);
+      height: 100px;
+      width: 500px;
+      /*border-width: 1.2cqb;
+            border-color: rgb(195, 18, 18);
+            border width or color result show nhi karayn gy jab tak border style use nhi karayn gy
+            border-style: solid; */
+      /* oper wali 3 lines ko aik sath is tarhan likha ja sakta hy */
+      border: 2px solid black;
+      /* to get rounded corners use border-radius */
+      border-radius: 10px;
+    }
+
+    #secondpara {
+      background-color: rgb(14, 137, 237);
+      height: 100px;
+      width: 500px;
+      /* top bottom left right sb seperatly use kiay ja saktya hy is case ap ny koi aik use karna ho */
+      border-top: 3px solid brown;
+      border-left: 3px solid darkmagenta;
+      border-bottom: 3px solid firebrick;
+      border-right: 3px solid lawngreen;
+      /* similarly border radius can be used spperately */
+      border-top-left-radius: 3px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 5px;
+    }
+
+    #thirdpara {
+      height: 500px;
+      width: 600px;
+      background-image: url(https://th.bing.com/th/id/OIP.xung4mlBfvUR3RKzjnRY2AHaEK?rs=1&pid=ImgDetMain);
+      border: 4px solid rebeccapurple;
+      /* image is repeating to stop its repatition just use backgroung-repeat  */
+      background-repeat: no-repeat;
+      /* repaat-x and repeat-y will make it repeat om x and y axis*/
+      background-position: center center;
+      /* background-position: centre top; */
+      /* background-position: 17px top; */
+      /* background-position: top left; */
+      background-size: auto;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Height, width, boarders and background</h1>
+  <h3>This is first heading</h3>
+  <p id="firstpara">This is first paragraph.</p>
+  <h3>This is second heading</h3>
+  <p id="secondpara">This is second paragraph.</p>
+  <h3>This is third heading</h3>
+  <p id="thirdpara">This is third paragraph.</p>
+</body>
+
+</html>

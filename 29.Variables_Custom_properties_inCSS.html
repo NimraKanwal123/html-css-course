@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables or Custom Properties</title>
+    <!-- css error through nhi karti hy agar ap ny koi galat cheez likh  di to ye koi dosri cheez assume kr ly gi -->
+    <style>
+      :root{
+        /*kisi vairable ko declear karnay k liay -- us k pichay lagana hota hy  */
+        /* variables can hold colors, url(),numbers,strings etc. */
+            --primary-color: rgb(112, 112, 218);
+            --danger-color: rgba(188, 82, 82, 0.646);
+            --maxw: 500px;
+        }
+        .box{
+            /* Agar ap kisi specific element my koi variable declear kartay hyn to wo varialbe sirf us element myn use ho ga us vairable ko universal variable k tor pr use karnay k liay ap ko :root{} my un vriables ko likhna ho ga*/
+            --box-color:pink;  /* variable */
+            --black:black;    /* variable */
+            background-color: var(--box-color,green);
+            /* here green represents that if --boc-color veriable is not working then use green color insterd of it */
+            width:200px;
+            height: 200px;
+            border: 2px solid var(--black);
+            box-shadow: 3px 3px var(--primary-color);
+            margin: 2px 9px;
+        }
+        .container{ 
+            max-width: var(--maxw);
+            margin: auto;  /* to center the container */
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

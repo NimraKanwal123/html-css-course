@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+     
+
+         .box {
+            text-align: center;
+            background-color: rgba(255, 196, 0, 0.959);
+            color: white;
+            font-size: 50px; 
+            display: none; 
+         }
+            /* Now, we are changing the display value to display:none; and then we will apply the media queries. */
+            /* we have applied the media query to id=box1. So, whenever the page's width is 400px or more than 400px, then the display value of the box1 will be changed from display:none; to display:block; and applied CSS will be visible to the user. */
+            /* media query is like if condition. */
+            /* we write only screen here because there are other media types you can search them to ignore them we write only screen */
+            /* you can use width<= 300px  instead of max-width:300px*/
+            @media only screen and (max-width: 300px) {
+                #box1 {
+                    display: block;
+                    background-color: aqua;
+                }
+            }
+            @media only screen and (min-width: 300px) and (max-width: 500px) {
+                #box2 {
+                    display: block;
+                    background-color: yellow;
+                }
+            }
+
+            @media only screen and (min-width: 500px) and (max-width: 800px) {
+                #box3 {
+                    display: block;
+                    background-color: plum;
+                }
+            }
+
+            @media only screen and (min-width: 800px) {
+                #box4 {
+                    display: block;
+                    background-color: palegreen;
+                }
+            } 
+            /* this media query will be displayed when width is greater than height */
+            @media screen and (orientation: landscape){
+                body{
+                    border:2px solid black;
+                    background-color:pink;
+                }
+            }
+            /* this media query will be displayed when height is greater than width */
+            @media screen and (orientation : portrait) {
+                body{
+                    border:2px solid red;
+                    background-color: aquamarine;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <!--*? 4th way to make your website responsive is Media Query -->
+    <!--* Media Query ka matlab hy k hum css ko batatay hyn agar screen ka size change ho ga to usay kaya changing karni hon gi  -->
+    <div class="box" id="box1"> Windows</div>
+    <div class="box" id="box2"> MacOS</div>
+    <div class="box" id="box3"> Kali Linux</div>
+    <div class="box" id="box4">Android</div>
+</body>
+
+</html>
